@@ -52,6 +52,7 @@ public class HotelManagementService {
                 maxFecilitetedHotel = getLexicographicalSmallHotelName(hotel.getHotelName(), maxFecilitetedHotel);
             }
         }
+        if(maxFacility == 0) return "";
         return maxFecilitetedHotel;
     }
     public int bookARoom(Booking booking) {
